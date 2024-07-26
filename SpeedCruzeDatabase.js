@@ -23,9 +23,11 @@ function getData(name){
 function onLoading(){
   return JSON.parse(content).value
 }
-on(libPrefix + 'SaveData', onLoading );
+
 
 publish({
   saveData: saveData,
   getData: getData     
 })
+
+on(libPrefix + 'SaveData', onLoading );
