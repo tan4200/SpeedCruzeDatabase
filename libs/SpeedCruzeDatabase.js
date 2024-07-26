@@ -4,6 +4,7 @@ function saveData(name, value) {
   HTTP.get({
     url: "https://heterotrophic-water.000webhostapp.com/save_sc.php?user_tg_id=" + name + "&value=" + value
   });
+  return "success";
 }
 
 function getData(name) {
