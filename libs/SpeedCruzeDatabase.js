@@ -21,7 +21,7 @@ function getData(name) {
 function onDataReceived() {
   var data = JSON.parse(content);
   return JSON.stringify(content);
-  Bot.sendMessage(JSON.stringify(content));
+
 }
 
 publish({
