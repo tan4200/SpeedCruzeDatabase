@@ -22,7 +22,7 @@ function getData(name) {
 
 function onDataReceived() {
   var data = JSON.parse(content);
-  return JSON.stringify(data);
+  Bot.sendMessage(JSON.stringify(data));
 }
 
 publish({
