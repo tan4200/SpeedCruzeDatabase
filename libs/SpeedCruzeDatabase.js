@@ -15,7 +15,7 @@ function getData(name) {
 
 function onDataReceived() {
   var data = JSON.parse(content);
-  return data.value;
+  return JSON.stringify(content);
 }
 
 publish({
