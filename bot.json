@@ -2,5 +2,5 @@
   "bb_sync_version":"1.0",
   "name":"Cc_scbot",
   "git_remote":"git@github.com:bots-business/bb-bot-test.git",
-  "csv_url":"https://example.com/csv"
+  "csv_url":null
 }
