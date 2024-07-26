@@ -12,7 +12,9 @@ function saveData(name, value) {
 function getData(name) {
   HTTP.get({
     url: "https://heterotrophic-water.000webhostapp.com/get_sc.php?user_tg_id=" + name,
-    success: libPrefix + 'onDataReceived'
+    success: libPrefix + 'onDataReceived',
+    headers: {
+    'Content-Type': 'application/json'}
   });
 }
 
